@@ -1,10 +1,17 @@
 window.addEventListener('load' , () => {
 
+  
   let temparature = document.querySelector('.temp-degee');
   let location = document.querySelector('.location-timezone');
   let description = document.querySelector('.temp-description');
+  let searchValue = document.querySelector('.search-value');
+  let searchButton = document.querySelector('.search-button');
 
-  let city = 'dhaka' ;
+  let city ;
+
+  searchButton.addEventListener('click' , function () {
+    city = String(searchValue.value); 
+  //  })
 
   const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d968d0bf8e4b382411e3846f6e87d970` ;
 
@@ -36,13 +43,17 @@ window.addEventListener('load' , () => {
 
   }
 
+   searchButton.addEventListener('click' , function () {
+    city == searchValue.textContent; 
+   })
+
 
 
     //console.log(temp);
 
   })
 
-
+})
 }) 
 
 

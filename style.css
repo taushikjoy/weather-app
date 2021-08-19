@@ -33,3 +33,14 @@ body {
   align-items: center;
 
 }
+
+.degree-section {
+  display: flex;
+  align-items: center;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+

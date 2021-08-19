@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Weather</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="location">
+      <h1 class="location-timezone">Timezone</h1>
+      <p>icon</p>
+    </div>
 
-  <div class="location">
-          <h1 class="location-timezone">
-            Timezone
-          </h1>
-          <p>
-            icon
-          </p>
-  </div>
+    <div class="temparature">
+      <div class="degree-section">
+        <h2 class="temp-degee">34</h2>
+        <span> F </span>
+      </div>
+      <div class="temp-description">its cold</div>
+    </div>
 
-  <div class="temparature">
-     <h2 class="temp-degee"> 34 </h2>
-     <span> </span>
-     <div class="temp-description">
-       its cold
-     </div>
-  </div>
-
-
-
-  
-  
-  
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
+
+
+<!-- 
+  http://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=d968d0bf8e4b382411e3846f6e87d970
+ -->
